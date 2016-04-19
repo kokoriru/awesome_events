@@ -12,7 +12,7 @@ class Event < ActiveRecord::Base
     return unless start_time && end_time
 
     if start_time >= end_time
-      error.add(:start_time, 'は終了時間よりも前に設定してください')
+      errors.add(:start_time, 'は終了時間よりも前に設定してください')
     end
   end
 end
