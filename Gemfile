@@ -43,6 +43,12 @@ gem 'kaminari-bootstrap', '~> 3.0.1'
 # イベント検索機能
 gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4.2'
 
+# 画像添付
+gem 'carrierwave', '~> 0.10.0'
+
+# 画像サイズのリサイズ
+gem 'mini_magick', '~> 3.7.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
