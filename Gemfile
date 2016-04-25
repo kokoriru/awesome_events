@@ -60,6 +60,7 @@ group :development, :test do
 
   # RSpec 記法によるテスト環境
   gem 'rspec-rails', '3.0.2'
+  gem 'factory_girl_rails', '~> 4.4.1'
 end
 
 group :development do
