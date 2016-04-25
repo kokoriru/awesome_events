@@ -52,6 +52,9 @@ gem 'mini_magick', '~> 3.7.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  # RSpec 記法によるテスト環境
+  gem 'rspec-rails', '3.0.2'
 end
 
 group :development do
