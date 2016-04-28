@@ -49,9 +49,18 @@ gem 'carrierwave', '~> 0.10.0'
 # 画像サイズのリサイズ
 gem 'mini_magick', '~> 3.7.0'
 
+group :test do
+  # バリデーション関連のテストコードを簡潔化
+  gem 'shoulda-matchers', '~> 2.6.0'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  # RSpec 記法によるテスト環境
+  gem 'rspec-rails', '3.0.2'
+  gem 'factory_girl_rails', '~> 4.4.1'
 end
 
 group :development do
